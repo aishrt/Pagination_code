@@ -1,0 +1,27 @@
+import { Pagination, Stack } from "@mui/material";
+
+ <Stack spacing={2} sx={{ display: 'flex', justifyContent: 'center' }}>
+                      <Pagination
+                        count={totalPages}
+                        page={currentPage}
+                        onChange={(event, page) => setCurrentPage(page)}
+                        shape="rounded"
+                        variant="outlined"
+                        sx={{
+                          '& .MuiPaginationItem-root': {
+                            color: '#541690',
+                            borderColor: '#541690',
+                            borderRadius: '4px',
+                            margin: '0 2px',
+                            '&.Mui-selected': {
+                              background: '#541690',
+                              color: '#fff',
+                            },
+                            '&:hover': {
+                              backgroundColor: '#541690',
+                              color: '#fff',
+                            },
+                          },
+                        }}
+                      />
+                    </Stack>
